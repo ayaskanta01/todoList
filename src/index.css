@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.main_div {
+  width: 100%;
+  height: 100vh;
+  background-color: #ccddfb;
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div {
+  width: 30%;
+  height: 80vh;
+  background-color: #fffffd;
+  box-shadow: 5px 5px 25px -10px rgba(0 , 0 , 0 , 0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  color : white;
+  background: transparent;
+  background-color: #3c7df0;
+  padding: 6px 0 ;
+  margin-bottom: 15px;
+  border-radius: inherit;
+}
+
+input {
+  text-align: center;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  width: 60%;
+  border-bottom: 2px solid #3c7df0;
+  outline: none;
+  font-weight: 500;
+}
+
+button {
+  min-height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3c7df0;
+  color : #fffffd ;
+  font-size: 22px ;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+}
+
+button:hover{
+  background-color:#00b460;
+}
+
+ol {
+  margin-top: 40px;
+}
+
+ol li {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 18px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.todo_style .fa-times{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c7df0;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: #fffffd;
+}
+
+.todo_style .fa-times:hover {
+  background-color: #EC124F;
+}
+
+.todo_style .fa-times:hover ~ .list_style {
+  color: #EC124F;
+}
+
+@media (max-width:960px) {
+  .center_div {
+    width: 65%;
+  }
+
+  .todo_style .fa-times{
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin-left: 5px;
+    min-height: 36px;
+    width: 36px;
+    font-size: 20px;
+  }
+}
